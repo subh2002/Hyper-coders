@@ -69,7 +69,7 @@
 //     button.setAttribute("disabled", "true");
 // }
 
-const button = document.querySelector("geo-button");
+const button = document.querySelector(".geo-button");
 button.addEventListener("click", ()=>{
      console.log('Print')
     if(navigator.geolocation){
@@ -86,6 +86,7 @@ function onSuccess(position){
     fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=03c62c6a9f03465ea6c8b43df057dd47`,Headers)
     // https://api.opencagedata.com/geocode/v1/json?q=LAT+LNG&key=03c62c6a9f03465ea6c8b43df057dd47
     .then(response => response.json()).then(response =>{
+        console.log(response0);
         let allDetails = response.results[0].components;
         console.table(allDetails);
         let {county, postcode, country} = allDetails;

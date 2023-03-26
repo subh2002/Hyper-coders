@@ -442,7 +442,7 @@
                     Profile
                 </a>
                 <a href="#" class="list-group-item list-group-item-action" style="background-color:#292b2c;text-align:center;color:goldenrod">Transactions</a>
-                <a href="#" class="list-group-item list-group-item-action" style="background-color:#292b2c;text-align:center;color:goldenrod">subscriptions</a>
+                <a href="#" class="list-group-item list-group-item-action" style="background-color:#292b2c;text-align:center;color:goldenrod">Track Order</a>
                 <a href="#" class="list-group-item list-group-item-action" style="background-color:#292b2c;text-align:center;color:goldenrod">Farmers</a>
                 <a href="#" class="list-group-item list-group-item-action " style="background-color:#292b2c;text-align:center;color:goldenrod">Logout</a>
             </div>
@@ -465,7 +465,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item  " style="padding-right:-20px;">Profile</a>
                     <a class="dropdown-item " style="padding-right:-20px;" href="#">Transactions</a>
-                    <a class="dropdown-item " style="padding-right:-20px;" href="#">Subscriptions</a>
+                    <a class="dropdown-item " style="padding-right:-20px;" href="#">Track Order</a>
                     <a class="dropdown-item " style="padding-right:-20px;" href="#">Farmers</a>
                     <a class="dropdown-item " style="padding-right:-20px;" href="#">Logout</a>
                 </div>

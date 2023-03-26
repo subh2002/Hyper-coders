@@ -14,7 +14,7 @@ include("../Functions/functions.php");
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="/js/geolocation.js"></script>
+    <script src="../js/geolocation.js"></script>
     <a href="https://icons8.com/icon/83325/roman-soldier"></a>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -487,41 +487,7 @@ include("../Functions/functions.php");
             <?php
             getUsername();
             ?>
-            <!-- <div>
-                <label for="user-location">Your Location:</label>
-                <input type="text" class="input-group-text" id="user-location" readonly>
-                <button id="get-location" onclick= getLocation() class="input-group mb-1 ml-2 searchbox">Get Location</button>
-                <button id="edit-location" onclick="enableLocationEdit()">Edit</button>
-                <style>
-                    #user-location {
-                    width: 200px;
-                    height: 20px;
-                    padding: 5px;
-                    font-size: 14px;
-                                    }
-                    #get-location {
-                    margin-right: 10px;
-                    margin-left: 0;
-                    }
-                    #edit-location {
-                     margin-left: 10px;
-                    }
-                     /* Optional: Style the label and container */
-                    label {
-                    display: block;
-                    margin-bottom: 5px;
-                    font-weight: bold;
-                    }
-                    input[type="text"] {
-                   box-sizing: border-box;
-                   border: 1px solid #ccc;
-                   border-radius: 4px;
-                   }
- 
-                </style>
-            </div> -->
-            <div>
-            <button class="geo-button">Detect your location</button>
+                        <button class="geo-button">Detect your location</button>
             <style>
             *{
               margin: 0;
@@ -576,7 +542,6 @@ include("../Functions/functions.php");
     }
 
             </script>
-            </div>
             <div class="list-group moblists">
 
                 <?php
@@ -584,7 +549,7 @@ include("../Functions/functions.php");
                     echo "<a href='BuyerProfile.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Profile</a>";
                     echo "<a href= 'Transaction.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Transactions</a>";
                     echo "<a href='saveforlater.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Save For Later</a>";
-                    echo "<a href='#' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Subscriptions</a>";
+                    echo "<a href='Track order.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Track Order</a>";
                     echo "<a href='farmer.php' class='list-group-item list-group-item-action' style='background-color:#292b2c;text-align:center;color:goldenrod'>Farmers</a>";
                     echo "<a href='../Includes/logout.php' class='list-group-item list-group-item-action ' style='background-color:#292b2c;text-align:center;color:goldenrod'>Logout</a>";
                 } else {
@@ -614,7 +579,7 @@ include("../Functions/functions.php");
                     if (isset($_SESSION['phonenumber'])) {
                         echo "<a href='BuyerProfile2.php' class='dropdown-item  ' style='padding-right:-20px;'>Profile</a>";
                         echo "<a href='Transaction.php' class='dropdown-item ' style='padding-right:-20px;'>Transactions</a>";
-                        echo "<a href='#' class='dropdown-item'  style='padding-right:-20px;'>Track Order</a>";
+                        echo "<a href='Track order.php' class='dropdown-item'  style='padding-right:-20px;'>Track Order</a>";
                         echo "<a href='saveforlater.php' class='dropdown-item' style='padding-right:-20px;'>Save For Later</a>";
                         echo "<a href='farmers.php' class='dropdown-item' style='padding-right:-20px;' >Farmers</a>";
                         echo "<a href='../Includes/logout.php' class='dropdown-item ' style='padding-right:-20px;'>Logout</a>";
